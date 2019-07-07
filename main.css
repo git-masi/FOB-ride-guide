@@ -30,6 +30,10 @@ h1, h3 {
   text-align: center;
 }
 
+li {
+  margin-left: 4rem;
+}
+
 .page-container {
   margin: 0 auto;
   padding: 2rem;

@@ -1,0 +1,50 @@
+html {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+:root {
+  --clr-primary: rgba(52, 152, 219, 1.0);
+  /* --clr-primary-dark: ; */
+  /* --clr-primary-light: ; */
+
+  /* --animation-time: ; */
+  /* --nav-height: ; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  font-size: 1.6rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+  background-color: aliceblue;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+.page-container {
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+button,
+button:focus {
+  all: unset;
+  padding: 1rem 1.5rem;
+  color: white;
+  background: var(--clr-primary);
+  cursor: pointer;
+}

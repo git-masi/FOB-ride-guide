@@ -7,6 +7,10 @@ html {
   --clr-primary: rgba(52, 152, 219, 1.0);
   /* --clr-primary-dark: ; */
   /* --clr-primary-light: ; */
+  --clr-dark: rgba(34, 47, 62, 1.0);
+  --blue-card1: #2e86de;
+  --blue-card2: #0abde3;
+  --blue-card-shadow: rgba(52, 31, 151, .3);
 
   /* --animation-time: ; */
   /* --nav-height: ; */
@@ -26,12 +30,16 @@ body {
   background-color: aliceblue;
 }
 
-h1, h3 {
+h1, h3, h4 {
   text-align: center;
 }
 
 li {
   margin-left: 4rem;
+}
+
+p, li {
+  margin-bottom: 1rem;
 }
 
 .page-container {
@@ -51,4 +59,28 @@ button:focus {
   color: white;
   background: var(--clr-primary);
   cursor: pointer;
+}
+
+.card {
+  margin: 4rem auto;
+  padding: 2rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.8rem;
+  border: 1px solid var(--clr-dark);
+  border-radius: 5px;
+}
+
+.card__blue{
+  color: white;
+  background: linear-gradient(to bottom right, var(--blue-card1), var(--blue-card2));
+  box-shadow: .5rem .5rem 1rem .5rem var(--blue-card-shadow);
+}
+
+.card-heading {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  text-decoration: underline;
 }

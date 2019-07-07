@@ -42,6 +42,25 @@ p, li {
   margin-bottom: 1rem;
 }
 
+button,
+button:focus {
+  all: unset;
+  padding: 1rem 1.5rem;
+  color: white;
+  background: var(--clr-primary);
+  cursor: pointer;
+}
+
+img {
+  height: auto;
+  width: 100%;
+}
+
+section {
+  padding: 2rem;
+  background: white;
+}
+
 .page-container {
   margin: 0 auto;
   padding: 2rem;
@@ -52,14 +71,6 @@ p, li {
   grid-gap: 2rem;
 }
 
-button,
-button:focus {
-  all: unset;
-  padding: 1rem 1.5rem;
-  color: white;
-  background: var(--clr-primary);
-  cursor: pointer;
-}
 
 .card {
   margin: 4rem auto;

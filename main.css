@@ -148,8 +148,28 @@ section {
   box-shadow: .5rem .5rem 1rem .5rem var(--blue-card-shadow);
 }
 
+.card__green{
+  color: white;
+  background: linear-gradient(to bottom right, #27ae60, #2ecc71);
+  box-shadow: .5rem .5rem 1rem .5rem rgba(22, 160, 133, .3);
+}
+
 .card-heading {
   margin-bottom: 2rem;
   font-size: 3rem;
   text-decoration: underline;
+}
+
+.table {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid var(--clr-dark);
+  border-right: 1px solid var(--clr-dark);
+}
+
+.table > * {
+  margin: 0;
+  padding: 1rem;
+  border-bottom: 1px solid var(--clr-dark);
+  border-left: 1px solid var(--clr-dark);
 }

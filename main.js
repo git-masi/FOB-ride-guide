@@ -1,8 +1,8 @@
 const clickHeadings = document.querySelectorAll('.clickable-heading');
 
 document.addEventListener('DOMContentLoaded', () => {
-  clickHeadings[0].nextElementSibling.style.display = 'block';
-  clickHeadings[0].nextElementSibling.classList.add('open');
+  clickHeadings[1].nextElementSibling.style.display = 'block';
+  clickHeadings[1].nextElementSibling.classList.add('open');
 });
 
 clickHeadings.forEach(el => {

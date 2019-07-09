@@ -31,6 +31,10 @@ body {
   background-color: aliceblue;
 }
 
+header {
+  margin-bottom: 4rem;
+}
+
 h1, h3, h4 {
   text-align: center;
 }
@@ -142,6 +146,10 @@ section {
   border-radius: 5px;
 }
 
+#ssss .card {
+  width: 90%;
+}
+
 .card__blue{
   color: white;
   background: linear-gradient(to bottom right, var(--blue-card1), var(--blue-card2));
@@ -154,10 +162,17 @@ section {
   box-shadow: .5rem .5rem 1rem .5rem rgba(22, 160, 133, .3);
 }
 
-.card-heading {
+.card--heading {
   margin-bottom: 2rem;
   font-size: 3rem;
   text-decoration: underline;
+}
+
+.card--heading__sub {
+  margin-bottom: 2rem;
+  font-size: 2.2rem;
+  text-align: center;
+  color: #4e5864;
 }
 
 .table {

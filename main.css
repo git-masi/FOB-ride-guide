@@ -32,11 +32,37 @@ body {
 }
 
 header {
+  position: relative;
   margin-bottom: 2rem;
+  padding: 2rem 0;
+  background-color: aliceblue;
+}
+
+header::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: '';
+  margin: -5px;
+  z-index: -1;
+
+  border-radius: 5px;
+  background: linear-gradient(to bottom right, #2980b9, #8e44ad);
+  background-clip: padding-box;
 }
 
 h1, h3, h4 {
   text-align: center;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  font-size: 2.4rem;
 }
 
 li {

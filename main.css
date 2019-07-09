@@ -5,16 +5,12 @@ html {
 
 :root {
   --clr-primary: rgba(52, 152, 219, 1.0);
-  /* --clr-primary-dark: ; */
-  /* --clr-primary-light: ; */
   --clr-dark: rgba(34, 47, 62, 1.0);
   --clr-dark-lighten1: #4e5864;
   --blue-card1: #2e86de;
   --blue-card2: #0abde3;
   --blue-card-shadow: rgba(52, 31, 151, .3);
 
-  /* --animation-time: ; */
-  /* --nav-height: ; */
 }
 
 * {
@@ -123,7 +119,9 @@ footer > p {
 .collapsible {
   position: relative;
   overflow: hidden;
-  /* box-shadow: 0 .5rem .5rem .2rem rgba(0, 0, 0, .25); */
+
+  max-height: 5rem;
+  transition: max-height 800ms ease-in-out;
 }
 
 .collapsible:not(:last-of-type) {
@@ -132,8 +130,12 @@ footer > p {
 
 .clickable-heading {
   position: relative;
-  padding: 1rem 0;
+  height: 5rem;
   z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   color: white;
   background: var(--clr-dark);
   border-radius: 5px 5px 0 0;
@@ -141,35 +143,9 @@ footer > p {
   transition: all 300ms;
 }
 
+
 .clickable-heading:hover {
   background: var(--clr-dark-lighten1);
-}
-
-.close {
-  display: none;
-  animation: close 600ms ease-in-out forwards;
-}
-
-.open {
-  animation: open 600ms ease-in-out forwards;
-}
-
-@keyframes open {
-  from {
-    transform: translateY(-110%);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
-
-@keyframes close {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-110%);
-  }
 }
 
 .card {

@@ -1,27 +1,16 @@
 const clickHeadings = document.querySelectorAll('.clickable-heading');
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   clickHeadings[3].nextElementSibling.style.display = 'block';
-//   clickHeadings[3].nextElementSibling.classList.add('open');
-// });
-
 clickHeadings.forEach(el => {
   el.addEventListener('click', toggleOpenClose);
 });
 
 function toggleOpenClose(e) {
-  const collapsible = e.target.nextElementSibling;
-  const styles = getComputedStyle(collapsible);
-  const time = styles.getPropertyValue('--time').replace('ms', '');
+  const parent = e.target.parentElement;
+  const content = e.target.nextElementSibling;
 
-  if (collapsible.classList.contains('open')) {
-    setTimeout(() => {
-      collapsible.style.display = 'none';
-    }, time);
-    collapsible.classList.remove('open');
+  if (parent.style.maxHeight == '') {
+    parent.style.maxHeight = content.scrollHeight + 'px';
   } else {
-    collapsible.style.display = 'block';
-    collapsible.classList.add('open');
+    parent.style.maxHeight = '';
   }
-
 }

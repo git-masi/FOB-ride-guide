@@ -120,8 +120,15 @@ footer > p {
   position: relative;
   overflow: hidden;
 
-  max-height: 5rem;
-  transition: max-height 800ms ease-in-out;
+  /* max-height: 5rem;
+  transition: max-height 800ms ease-in-out; */
+}
+
+@media screen and (min-width: 600px) {
+  .collapsible {
+    max-height: 5rem;
+    transition: max-height 800ms ease-in-out;
+  }
 }
 
 .collapsible:not(:last-of-type) {

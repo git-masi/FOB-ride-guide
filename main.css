@@ -32,7 +32,7 @@ body {
 }
 
 header {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 h1, h3, h4 {
@@ -66,6 +66,16 @@ section {
   padding: 2rem;
   background: white;
   transition: all var(--time) ease-out;
+  border-radius: 0 0 5px 5px;
+}
+
+footer {
+  height: 4rem;
+  display: flex;
+}
+
+footer > p {
+  margin: auto;
 }
 
 .page-container {
@@ -87,6 +97,7 @@ section {
 .collapsible {
   position: relative;
   overflow: hidden;
+  /* box-shadow: 0 .5rem .5rem .2rem rgba(0, 0, 0, .25); */
 }
 
 .collapsible:not(:last-of-type) {

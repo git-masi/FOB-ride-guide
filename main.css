@@ -29,8 +29,10 @@ body {
 
 header {
   position: relative;
+  margin: 0 auto;
   margin-bottom: 2rem;
   padding: 2rem 0;
+  width: calc(100% - 10px);
   background-color: aliceblue;
 }
 
@@ -51,18 +53,20 @@ header::before {
 
 h1, h3, h4 {
   text-align: center;
+  line-height: 1.5;
 }
 
 h1 {
   font-size: 4.5rem;
+  line-height: 1.2;
 }
 
 h3 {
   font-size: 2.4rem;
 }
 
-li {
-  margin-left: 4rem;
+ul, ol {
+  padding-left: 40px;
 }
 
 p, li {
@@ -119,9 +123,6 @@ footer > p {
 .collapsible {
   position: relative;
   overflow: hidden;
-
-  /* max-height: 5rem;
-  transition: max-height 800ms ease-in-out; */
 }
 
 @media screen and (min-width: 600px) {
@@ -207,4 +208,36 @@ footer > p {
   padding: 1rem;
   border-bottom: 1px solid var(--clr-dark);
   border-left: 1px solid var(--clr-dark);
+}
+
+@media screen and (max-width: 600px) {
+  .page-container {
+    padding: 2rem 0;
+  }
+
+  ul, ol {
+    padding-left: 30px;
+  }
+
+  .card,
+  .card__blue,
+  .card__green,
+  #ssss .card {
+    padding: 1.5rem;
+    width: 100%;
+  }
+
+  .card--heading {
+    font-size: 2.4rem;
+  }
+
+  .clickable-heading {
+    padding: 1rem;
+    height: initial;
+    cursor: default;
+  }
+
+  .clickable-heading:hover {
+    background: var(--clr-dark);
+  }
 }
